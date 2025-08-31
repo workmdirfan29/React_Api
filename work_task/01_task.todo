@@ -1,0 +1,23 @@
+STEP : 01
+    => Create a register page and take the details of an user
+        --> username email password gender
+        --> store the credentials into local storage
+    
+STEP : 02
+    => Validate the username and password 
+        --> get the users value from local storage
+        --> with hardcoded "admin & admin@123"
+        :> if the user credentials are valid then redirect to home page
+        :> else the user credentials is not matched then show a react hot toast user doesn't exist
+
+STEP : 03
+    => Home page shows welcom back and hello username
+    
+STEP : 04       
+    => About page shows all data users data except password visible
+    --> use lucide react icon to show the hidden password
+
+STEP : 05   
+    => Use ControllerPage.tsx file with this routes "/update-user"
+    --> and update the existing username and password and termainte the user
+    --> if you update the user the remove all user and update the new user value in local storage
